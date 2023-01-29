@@ -92,23 +92,23 @@ Cette classe contient les méthodes suivantes:
 
 ### 1. JSON
 
-![img.png](img.png) consumer
+![img.png](assets/img.png) consumer
 
-![img_1.png](img_1.png) producer
+![img_1.png](assets/img_1.png) producer
 
 J'ai aussi utilisé Offset Explorer pour voir les données.
-![img_2.png](img_2.png)
+![img_2.png](assets/img_2.png)
 
 ### 2. Avro
 
 Topic section dans le control center de confluent **[localhost:9021](http://localhost:9021/)**
-![img_3.png](img_3.png)
+![img_3.png](assets/img_3.png)
 
 un example de données dans le topic **pharmacy**
-![img_4.png](img_4.png)
+![img_4.png](assets/img_4.png)
 
 une capture d'écran de la console du consommateur dans le topic **pharmacy** avec le nom du groupe **admin**
-![img_5.png](img_5.png)
+![img_5.png](assets/img_5.png)
 
 ---
 
@@ -116,18 +116,18 @@ une capture d'écran de la console du consommateur dans le topic **pharmacy** av
 
 #### 3.1 3 partitions avec un nouveau topic "medicine"
 
-![img_10.png](img_10.png)
+![img_10.png](assets/img_10.png)
 
 **medicine** créé avec 3 partitions par le consumer group **admin** qui consomme depuis trois partitions
-![img_7.png](img_7.png)
+![img_7.png](assets/img_7.png)
 
 son group de consumer **group**
 
-![img_9.png](img_9.png)
+![img_9.png](assets/img_9.png)
 
 producer --> consumer(admin) --> consumer group
 
-![img_8.png](img_8.png)
+![img_8.png](assets/img_8.png)
 
 Comme montre la capture d'écran ci-dessus, le producteur envoie des données à un nœud Kafka, qui les stocke dans le topic **pharmacy**. Le consommateur de données avec le nom de groupe **admin** reçoit les données du nœud Kafka.
 Et l'admin crée un nouveau topic **medicine** trois consomateur avec le nom **group**.
@@ -169,15 +169,13 @@ J'ai deux claases Processors
 
 un pour convertir les noms en *** => créer un nouveux topic 'secret_medicine'
 
-![image.png](assets/image.png)
+![image.png](./assets/image.png)
 
 et la deuxième et pour filtrer les données ==> un nouveux topic 'exensive_medicine'
 
 ![image.png](assets/imeage.png)
 
-
 # Etapes pour lancer Avro Confluent
-
 
 1. Lancer docker compose 2
 2. Lancer Producer Main
