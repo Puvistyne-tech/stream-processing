@@ -58,7 +58,7 @@ docker-compose -f docker-compose2.yml down
 
 Ressources Folder [ici](./src/main/resources)
 
-![img_11.png](img_11.png)
+![img_11.png](assets/img_11.png)
 Ce dossier contient les fichiers de configuration pour toutes les classes java.
 Il contient aussi ```record.avsc``` qui est le schéma de données utilisé pour avro.
 
