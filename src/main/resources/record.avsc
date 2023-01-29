@@ -1,0 +1,12 @@
+{
+  "namespace": "org.example.kafka",
+  "type": "record",
+  "name": "RecordGenerator",
+  "fields": [
+    {"name": "firstName", "type": "string"},
+    {"name": "lastName", "type": "string"},
+    {"name": "cip", "type": "int"},
+    {"name": "price", "type": "double"},
+    {"name": "pharmacyId", "type": "int"}
+  ]
+}
